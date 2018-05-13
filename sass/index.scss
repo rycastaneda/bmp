@@ -285,6 +285,20 @@
             font-size: 14px;
         }
     }
+    .bg-overlay {
+        position: absolute;
+        background-color: rgba(255,255,255, 0.9);
+        content: '';
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        // @media (min-width: 991px) and (max-width: 1300px) {
+        //     height: 685px;
+        // }
+    }
     .banner {
         height: 800px;
         @media (max-width: 991px) {
@@ -425,8 +439,8 @@
             background-size: cover;
         }
         .track {
-            text-align: center;
             background: rgba(38, 169, 224, 0.9);
+            text-align: center;
             color: white;
             padding-top: 150px;
             padding-bottom: 150px;
@@ -452,7 +466,10 @@
             }
         }
         .lenders {
-            background: rgba(255, 255, 255, 0.9);
+            position: relative;
+            .container {
+                position: relative;
+            }
             h1 {
                 padding-top: 60px;
                 padding-bottom: 85px;
@@ -460,6 +477,71 @@
             }
 
             #lenderCarousel {
+                .controls {
+                    position: absolute;
+                    z-index: 10;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    @media(max-width: 1200px) {
+                        display: none;
+                    }
+                    .next, .prev {
+                        position: absolute;
+                        top: 130px;
+                        font-size: 40px;
+                        opacity: 0.5;
+
+                        @media(max-width: 375px) {
+                            top: 100px;
+                        }
+
+                        @media(max-width: 650px) {
+                            top: 20px;
+                        }
+
+                        @media(min-width: 650px) {
+                            top: 110px;
+                        }
+
+                        @media(min-width: 991px) {
+                            top: 70px;
+                        }
+
+                        svg {
+                            height: 40px;
+                        }
+                    }
+                    .next {
+                        right: -50px;
+
+                        @media(max-width: 991px) {
+                            right: 90px;
+                        }
+
+                        @media(max-width: 425px) {
+                            right: 40px;
+                        }
+
+                        img {
+                            height: 45px;
+                        }
+                    }
+                    .prev {
+                        left: -50px;
+
+                        @media(max-width: 991px) {
+                            left: 80px;
+                        }
+
+                        @media(max-width: 425px) {
+                            left: 40px;
+                        }
+                        img {
+                            height: 45px;
+                        }
+                    }
+                }
                 .indicators {
                     position: absolute;
                     top: 300px;
@@ -472,7 +554,7 @@
                         top: 550px;
                     }
                     @media (max-width: 425px) {
-                        top: 480px;
+                        top: 4px;
                     }
                     li {
                         display: inline;
@@ -495,10 +577,10 @@
             }
         }
         .support {
-            background: rgba(255, 255, 255, 0.9);
             text-align: center;
             padding-top: 130px;
             padding-bottom: 130px;
+            position: relative;
             @media (max-width: 991px) {
                 padding-top: 0px;
             }
@@ -535,7 +617,7 @@
                         padding: 20px 40px;
                     }
                 }
-                @media (max-width: 568px) {
+                @media (max-width: 991px) {
                     padding-top: 75px;
                 }
             }
@@ -546,27 +628,27 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: -220px;
+        position:relative;
         @media (min-width: 991px) and (max-width: 1300px) {
             background-position-y: 0px;
         }
-
-
 
         .container {
             @media (max-width: 991px) {
                 max-width: 100%;
             }
         }
-        .bg-overlay {
-            position: absolute;
-            background-color: rgba(255,255,255, 0.9);
-            height: 620px;
-            width: 100%;
+        // .bg-overlay {
+        //     height: 620px;
 
-            @media (min-width: 991px) and (max-width: 1300px) {
-                height: 685px;
-            }
-        }
+        //     @media (min-width: 991px) and (max-width: 1300px) {
+        //         height: 685px;
+        //     }
+
+        //     @media (max-width: 991px) {
+        //         height: 410px;
+        //     }
+        // }
         .media-img {
             background-image: url('/images/kids.jpg');
             background-size: cover;
