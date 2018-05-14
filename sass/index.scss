@@ -330,17 +330,17 @@
             /* background-size: contain; */
             background-position-y: -200px;
 
-            background-image: url('/images/banner.png');
+            background-image: url('/images/banner.jpg');
             background-repeat: no-repeat;
             @media (max-width: 991px) {
-                background-image: url('/images/banner.png');
+                background-image: url('/images/banner.jpg');
                 height: 600px;
                 background-position-x: -440px;
                 background-position-y: -300px;
             }
 
             @media (max-width: 568px) {
-                background-image: url('/images/smallbanner.png');
+                background-image: url('/images/smallbanner.jpg');
                 height: 600px;
                 background-position-x: -220px;
                 background-position-y: 0px;
@@ -433,7 +433,7 @@
     }
     .loan-lender {
         background-position-x: -630px;
-        background-image: url('/images/banner2.png');
+        background-image: url('/images/banner2.jpg');
         background-repeat: no-repeat;
         @media (max-width: 991px) {
             background-size: cover;
@@ -654,11 +654,11 @@
             background-size: cover;
             @media (max-width: 568px) {
                 height: 380px;
-                background-image: url(/images/kidsmobile.png);
+                background-image: url(/images/kidsmobile.jpg);
                 background-size: contain;
             }
             @media (max-width: 991px) {
-                background-image: url(/images/kidsmobile.png);
+                background-image: url(/images/kidsmobile.jpg);
             }
 
         }
