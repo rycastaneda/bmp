@@ -554,7 +554,7 @@
                         top: 550px;
                     }
                     @media (max-width: 425px) {
-                        top: 4px;
+                        top: 480px;
                     }
                     li {
                         display: inline;
@@ -617,7 +617,7 @@
                         padding: 20px 40px;
                     }
                 }
-                @media (max-width: 991px) {
+                @media (max-width: 991px) {g
                     padding-top: 75px;
                 }
             }
@@ -638,17 +638,6 @@
                 max-width: 100%;
             }
         }
-        // .bg-overlay {
-        //     height: 620px;
-
-        //     @media (min-width: 991px) and (max-width: 1300px) {
-        //         height: 685px;
-        //     }
-
-        //     @media (max-width: 991px) {
-        //         height: 410px;
-        //     }
-        // }
         .media-img {
             background-image: url('images/kids.jpg');
             background-size: cover;
